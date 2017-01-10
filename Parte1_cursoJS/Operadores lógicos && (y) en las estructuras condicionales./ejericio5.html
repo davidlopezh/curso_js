@@ -1,0 +1,38 @@
+<html>
+<head>
+</head>
+<body>
+
+<script type="text/javascript">
+
+
+var ano=prompt('Ingrese sus años de antigüedad');
+var sueldo=prompt('Ingrese su sueldo');
+
+
+
+if (ano>=10 && sueldo<500)
+{
+var porciento=parseInt(sueldo)*(.20);
+var total=parseInt(sueldo)+(porciento);
+document.write('total' + total);
+}
+else
+    {
+if (ano<10 && sueldo<500)
+{
+var porciento=parseInt(sueldo)*(.05);
+var total=parseInt(sueldo)+(porciento);
+document.write('total'+ total);
+}
+else{
+if (sueldo>=500)
+{
+document.write('no hay aumento'+ sueldo);
+}
+}
+}
+</script>
+
+</body>
+</html>
