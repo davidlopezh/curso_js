@@ -1,0 +1,43 @@
+<html>
+<head>
+</head>
+<body>
+
+<script type="text/javascript">
+  var nrocuenta;
+  var nombre;
+  var saldo=0;
+  var saldoacre=0;
+  do {
+    nrocuenta=prompt('Ingrese nro de cuenta:','');
+    nrocuenta=parseInt(nrocuenta);
+    if (nrocuenta>=0)
+    {
+      nombre=prompt('Nombre del cliente:');
+      saldo=prompt('Saldo actual:','');
+      saldo=parseInt(saldo);
+      if (saldo>0)
+      {
+        saldoacre=saldoacre+saldo;
+        document.write(nombre+' tiene saldo acreedor<br>');
+      }
+      else
+      {
+        if (saldo<0)
+        {
+          document.write(nombre+' tiene saldo deudor<br>');
+        }
+        else
+        {
+          document.write(nombre+' tiene saldo nulo<br>');
+        }
+      }
+
+    }
+  }while(nrocuenta>0);
+  document.write('Suma total de saldos acreedores:'+saldoacre);
+</script>
+
+</body>
+</html>
+     

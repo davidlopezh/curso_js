@@ -1,0 +1,38 @@
+<html>
+<head>
+</head>
+<body>
+
+<script type="text/javascript">
+
+var triangulo=0;
+
+for(f=1;f<=3;f++)
+  {
+    var base=prompt('Ingrese la base:','');
+
+
+    altura=prompt('Ingrese la altura:','');
+    altura=parseInt(altura);
+    var area=(base*altura)/2
+    area=parseFloat(area);
+
+
+document.write('Base: '+base+'<br>');
+document.write('Altura: '+altura+'<br>');
+document.write('Area: '+ area+ '<br>');
+document.write('<br>');
+
+
+if (area >12)
+      {
+       var triangulo=triangulo+1;
+
+      }
+  }
+ document.write( triangulo + '<br>');
+</script>
+
+</body>
+</html>
+     

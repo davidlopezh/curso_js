@@ -1,0 +1,81 @@
+<html>
+<head>
+</head>
+<body>
+
+<script type="text/javascript">
+
+var contequi=0;
+var contiso=0;
+var contes=0;
+
+for(f=1;f<=3;f++)
+  {
+var lado1=prompt('Ingrese el lado 1:','');
+    lado1=parseFloat(lado1);
+
+var lado2=prompt('Ingrese el lado 2:','');
+    lado2=parseFloat(lado2);
+
+var lado3=prompt('Ingrese el lado 3:','');
+    lado3=parseFloat(lado3);
+
+if(lado1==lado2 && lado2==lado3 ){
+
+document.write('El triángulo es equilatero');
+document.write('<br>');
+var contequi=contequi+1;
+}
+else{
+if(lado1==lado2 && lado2!=lado3){
+
+document.write('El triángulo es isósceles');
+document.write('<br>');
+var contiso=contiso+1;
+}
+else{
+if(lado2!=lado3 && lado1!=lado2){
+
+document.write('El triángulo es escaleno');
+document.write('<br>');
+var contes=contes+1;
+}
+  }
+
+   }
+
+   }
+
+document.write('<br>');
+document.write('Cantidad de triángulos equilateros:'+ ' ' +contequi);
+document.write('<br>');
+document.write('Cantidad de triángulos isósceles:'+ ' ' +contiso);
+document.write('<br>');
+document.write('Cantidad de triángulos escalenos:'+ ' ' +contes);
+document.write('<br>');
+
+
+if(contequi > contiso && contequi > contes ){
+document.write('<br>');
+document.write('hay mas triángulos equilateros');
+document.write('<br>');
+
+}
+else{
+if(contiso > contequi && contiso > contes ){
+
+document.write('hay mas triángulos isósceles ');
+document.write('<br>');
+}
+else{
+if(contes> contequi && contes > contiso ){
+
+document.write('hay mas triángulos escalenos');
+document.write('<br>');
+}
+}
+}
+
+</script>
+</body>
+</html>

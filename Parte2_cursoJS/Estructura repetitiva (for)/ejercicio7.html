@@ -1,0 +1,49 @@
+<html>
+<head>
+</head>
+<body>
+
+<script type="text/javascript">
+var negativos=0;
+var positivos=0;
+var multi=0;
+var suma=0;
+var pares=0;
+
+
+for(f=1;f<=5;f++)
+{
+    var dato=prompt('Ingrese los números:','');
+    dato=parseFloat(dato);
+
+if(dato<0){
+negativos=negativos+1;
+}
+else{
+
+if (dato>0){
+positivos=positivos+1
+}
+if(dato % 15 ==0){
+multi=multi+1;
+ }
+if(dato % 2 ==0){
+pares=pares+1;
+suma=suma+dato;
+ }
+}
+  }
+document.write('<br>')
+document.write('cantidad de negativos:'+ ' ' +negativos);
+document.write('<br>')
+document.write('cantidad de positivos:'+ ' ' +positivos);
+document.write('<br>')
+document.write('cantidad de múltiplos:'+ ' ' +multi);
+document.write('<br>')
+document.write('cantidad de pares:'+ ' ' +pares);
+document.write('<br>')
+document.write('suma de los pares:'+ ' ' +suma);
+</script>
+</body>
+</html>
+     

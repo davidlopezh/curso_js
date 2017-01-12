@@ -1,0 +1,41 @@
+<html>
+<head>
+</head>
+<body>
+
+<script type="text/javascript">
+
+    var valor1=prompt('Ingresa el primer numero','');
+    valor1=parseInt(valor1);
+
+    var valor2=prompt('Ingresa el segundo','');
+    valor2=parseInt(valor2);
+
+    var valor3=prompt('Ingresa el tercer numero','');
+    valor3=parseInt(valor3);
+
+function Mayor(x1,x2,x3)
+  {
+if(x1< x2 && x1 < x3){
+    document.write('el valor mas pequeño es el primer numero:'+' '+x1);
+
+}
+else
+{
+if(x2< x1 && x2 < x3){
+    document.write('el valor mas pequeño es el segundo numero'+' '+x2);
+}
+else{
+
+document.write('el valor mas pequeño es el tercer numero'+' '+x3);
+}
+}
+
+  }
+
+Mayor(valor1,valor2,valor3);
+
+</script>
+
+</body>
+</html>

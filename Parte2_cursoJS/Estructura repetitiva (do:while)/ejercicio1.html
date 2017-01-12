@@ -1,0 +1,37 @@
+<html>
+<head>
+</head>
+<body>
+
+<script type="text/javascript">
+var valor=0;
+var sum=0;
+do {
+    valor=prompt('Ingrese 9999 para terminar el ciclo :','');
+    valor=parseInt(valor);
+  if (valor!=9999)
+    {
+      sum=sum+valor;
+    }
+  } while(valor!=9999);
+ document.write('El la suma es '+ sum );
+ if (sum>0)
+    {
+      document.write('el valor es mayor que 0');
+    }
+    else
+    {
+      if (valor<0)
+      {
+        document.write('el valor es menor que 0');
+      }
+      else
+      {
+        document.write('El valor es igual a 0');
+      }
+    }
+
+</script>
+
+</body>
+</html>
