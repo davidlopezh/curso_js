@@ -1,0 +1,29 @@
+<html>
+<head>
+</head>
+<body>
+
+<script type="text/javascript">
+function mostrar()
+{
+  var nombre=document.getElementById('nombre').value;
+ var apellido=document.getElementById('apellido').value;
+ document.getElementById('resultado').value=nombre+apellido;
+
+}
+</script>
+
+<form>
+Ingrese el nombre:
+<input type="text" id="nombre"><br>
+Ingrese el segundo apellido:
+<input type="text" id="apellido"><br>
+<input type="button" value="Confirmar" onClick="mostrar()">
+<br>
+Resultado:
+<input type="text" id="resultado">
+</form>
+
+</body>
+</html>
+     

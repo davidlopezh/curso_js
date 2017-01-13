@@ -1,0 +1,36 @@
+<html>
+<head>
+</head>
+<body>
+
+<script type="text/javascript">
+
+function verificarArroba(mail)
+  {
+    var cant=0;
+    var f;
+    for(f=0;f<mail.length;f++)
+    {
+      if (mail.charAt(f)=='@')
+      {
+        cant++;
+      }
+    }
+    if (cant!=0)
+    {
+      document.write('El mail '+mail+' tiene el carácter @');
+    }
+    else
+    {
+      document.write('El mail '+mail+' no tiene el carácter @');
+    }
+  }
+
+  var mail;
+  mail=prompt('Ingrese un mail:','');
+  verificarArroba(mail);
+
+</script>
+
+</body>
+</html>

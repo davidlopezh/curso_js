@@ -1,0 +1,90 @@
+<html>
+<head>
+</head>
+<body>
+
+<script type="text/javascript">
+
+  var frase;
+  frase=prompt('Ingrese una palabra o frase:','');
+  document.write('la frase que escribiste:'+' '+frase);
+  document.write('<br>')
+
+  function mitad(frase)
+  {
+    document.write('Mitad de la frase:');
+    var f;
+    for(f=0;f<frase.length/2;f++)
+    {
+      document.write(frase.charAt(f));
+
+    }
+    document.write('<br>');
+  }
+
+  function ultimocaracter(frase)
+   {
+     document.write('Ultimo caracter:');
+     document.write(frase.charAt(frase.length-1));
+     document.write('<br><br>');
+   }
+
+
+   function imprimirinverso(frase)
+{
+  document.write('En forma inversa:');
+  var f;
+  for(f=0;f<frase.length;f++)
+  {
+    document.write(frase.charAt(frase.length-f-1));
+  }
+  document.write('<br><br>');
+}
+
+
+function imprimirconguion(frase)
+{
+  document.write('Separados por guion:');
+  var f;
+  for(f=0;f<frase.length;f++)
+  {
+    document.write(frase.charAt(f)+'-');
+  }
+  document.write('<br><br>');
+}
+
+function cantidadvocales(frase)
+  {
+    var f;
+    var cant=0;
+    for(f=0;f<frase.length;f++)
+    {
+      if (frase.charAt(f)=='a' ||
+          frase.charAt(f)=='e' ||
+          frase.charAt(f)=='i' ||
+          frase.charAt(f)=='o' ||
+          frase.charAt(f)=='u' ||
+          frase.charAt(f)=='A' ||
+          frase.charAt(f)=='E' ||
+          frase.charAt(f)=='I' ||
+          frase.charAt(f)=='O' ||
+          frase.charAt(f)=='U')
+      {
+        cant++;
+      }
+    }
+    document.write('Cantidad de vocales:'+cant);
+  }
+
+
+
+imprimirinverso(frase);
+mitad(frase);
+ultimocaracter(frase);
+imprimirconguion(frase)
+cantidadvocales(frase)
+  </script>
+
+</body>
+</head>
+</html>

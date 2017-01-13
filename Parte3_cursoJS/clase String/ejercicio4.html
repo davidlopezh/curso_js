@@ -1,0 +1,29 @@
+<html>
+<head>
+</head>
+<body>
+
+<script type="text/javascript">
+  var texto;
+  texto=prompt('Ingrese una palabra o frase:','');
+  var cant=0;
+  var f;
+  for(f=0;f<texto.length;f++)
+  {
+    if (texto.charAt(f)==texto.charAt(texto.length-1-f))
+    {
+      cant++;
+    }
+  }
+  if (cant==texto.length)
+  {
+    document.write(texto+' se lee igual en ambas direcciones');
+  }
+  else
+  {
+    document.write(texto+' no se lee igual en ambas direcciones');
+  }
+</script>
+
+</body>
+</html>

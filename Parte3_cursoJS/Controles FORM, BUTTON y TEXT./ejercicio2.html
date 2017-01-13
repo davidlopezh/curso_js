@@ -1,0 +1,30 @@
+<html>
+<head>
+</head>
+<body>
+
+<script type="text/javascript">
+function mostrar()
+{
+  var numero1=document.getElementById('numero1').value;
+ var numero2=document.getElementById('numero2').value;
+  if(numero1>numero2){
+alert('El numero mayor es:' + numero1);
+}
+else{
+alert('El numero mayor es:' + numero2);
+}
+}
+</script>
+
+<form>
+Ingrese el numero 1:
+<input type="text" id="numero1"><br>
+Ingrese el numero 2:
+<input type="text" id="numero2"><br>
+<input type="button" value="Confirmar" onClick="mostrar()">
+</form>
+
+</body>
+</html>
+     

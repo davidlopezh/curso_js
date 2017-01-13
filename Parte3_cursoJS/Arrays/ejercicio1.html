@@ -1,0 +1,80 @@
+<html>
+<head>
+</head>
+<body>
+
+<script type="text/javascript">
+
+
+ var vector;
+
+function datos(vector)
+  {
+    var f;
+    for(f=0;f<vector.length;f++)
+    {
+      var v;
+      v=prompt('Ingrese el dato:','');
+      vector[f]=parseInt(v);
+    }
+  }
+
+function calcularsum(vector)
+  {
+    var total=0;
+    var f;
+    for(f=0;f<vector.length;f++)
+    {
+      total=total+vector[f];
+    }
+document.write('el total de la suma de los datos es'+ ' '+total);
+document.write('<br>');
+}
+
+
+function cant50(vector)
+
+  {
+   var cant=0;
+    var f;
+    for(f=0;f<vector.length;f++)
+    {
+if (vector[f]==50)
+      {
+        cant=cant+1;
+      }
+    }
+ document.write('la cantidad de 50 ingresados son'+ ' '+cant);
+document.write('<br>');
+}
+
+function valor_acomu36(vector)
+
+  {
+   var sumav=0;
+    var f;
+    for(f=0;f<vector.length;f++)
+    {
+if (vector[f]>36)
+      {
+        sumav=sumav+vector[f];
+      }
+    }
+ document.write('la suma es de los números mayores a 36 es '+ ' '+sumav);
+document.write('<br>');
+}
+
+
+
+
+vector=new Array(5);
+datos(vector);
+calcularsum(vector);
+valor_acomu36(vector);
+cant50(vector);
+
+</script>
+
+</body>
+</html>
+     
