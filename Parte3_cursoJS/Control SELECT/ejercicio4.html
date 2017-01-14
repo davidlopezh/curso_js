@@ -1,0 +1,86 @@
+<html>
+<head>
+</head>
+<body>
+
+<script type="text/javascript">
+
+ function calificar()
+{
+    var resultado=0;
+    var p1=document.getElementById('p1');
+    var p2=document.getElementById('p2');
+    var p3=document.getElementById('p3');
+    var p4=document.getElementById('p4');
+
+ if(p1.options[p1.selectedIndex].value==1){
+
+resultado++;
+}
+ if(p2.options[p2.selectedIndex].value==2){
+
+resultado++;
+}
+ if(p3.options[p3.selectedIndex].value==2){
+
+resultado++;
+}
+ if(p4.options[p4.selectedIndex].value==1){
+
+resultado++;
+}
+
+
+alert('Cantidad de respuestas correctas:'+resultado);
+}
+
+</script>
+
+<form>
+Como se dice rojo en ingles: <br>
+  <select id="p1">
+    <option value=1> Red  </option>
+    <option value=2> Blue </option>
+    <option value=3> Yellow </option>
+    <option value=4> Green </option>
+  </select> <br>
+
+
+¿Cuánto es 2+2?: <br>
+  <select id="p2">
+    <option value=1> 58  </option>
+    <option value=2> 4 </option>
+    <option value=3> 76 </option>
+    <option value=4> 988 </option>
+  </select> <br>
+
+
+2 y 2 son 4, 4 y 2 son:: <br>
+  <select id="p3">
+    <option value=1> 58 </option>
+    <option value=2> 6 </option>
+    <option value=3> 76 </option>
+    <option value=4> 988 </option>
+  </select> <br>
+
+¿Como se dice casa en ingles?: <br>
+  <select id="p4">
+    <option value=1> Home </option>
+    <option value=2> Pat</option>
+    <option value=3> Corse </option>
+    <option value=4> Curse </option>
+  </select> <br>
+
+
+ <br>
+  <input type="button" value="Confirmar" onClick="calificar()">
+  <br>
+
+
+
+</form>
+
+
+</body>
+</html>
+     

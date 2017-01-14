@@ -1,0 +1,43 @@
+<html>
+<head>
+</head>
+<body>
+
+<script type="text/javascript">
+function datos()
+{
+var contador='';
+
+if (document.getElementById('checkbox1').checked)
+  {
+    contador=contador+'Futbol' + ' ';
+
+  }
+if (document.getElementById('checkbox2').checked)
+  {
+    contador=contador+'Bascket' +' ';
+
+  }
+if (document.getElementById('checkbox3').checked)
+  {
+    contador=contador+'Tennis'+ ' ';
+
+  }
+
+alert('los deportes escogidos son'+ ' '+contador )
+}
+</script>
+
+
+<form>
+<input type="checkbox" id="checkbox1">Futbol
+<br>
+<input type="checkbox" id="checkbox2">Bascket
+<br>
+<input type="checkbox" id="checkbox3">Tennis
+<br>
+<input type="button" value="Mostrar" onClick="datos()">
+</form>
+
+</body>
+</html>

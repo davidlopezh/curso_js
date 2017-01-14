@@ -1,0 +1,50 @@
+<html>
+<head>
+</head>
+<body>
+
+<script type="text/javascript">
+
+ function sumar()
+{
+    var pizza=document.getElementById('pizza').value;
+
+
+    var cantidad=document.getElementById('cantidad').value;
+
+
+     pizza=parseInt(pizza);
+     cantidad=parseInt(cantidad);
+
+
+    var suma=pizza*cantidad;
+    document.getElementById('resultado').value=suma;
+}
+
+
+
+
+</script>
+
+<form>
+Selecciona la Pizza: <br>
+  <select id="pizza">
+    <option value=4> Queso  </option>
+    <option value=6> Jamon y Queso </option>
+    <option value=10> Especial </option>
+  </select>
+
+Cantidad:<input type="text" id="cantidad">
+
+ <br>
+  <input type="button" value="Confirmar" onClick="sumar()">
+                <br>
+  El resultado es:<input type="text" id="resultado">
+
+
+</form>
+
+
+</body>
+</html>
+     

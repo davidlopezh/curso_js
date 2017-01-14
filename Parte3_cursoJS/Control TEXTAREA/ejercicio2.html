@@ -1,0 +1,73 @@
+<html>
+<head>
+</head>
+<body>
+
+<script type="text/javascript">
+
+ var vector1;
+ var vector2;
+
+function datos1(vector1)
+  {
+    var f;
+    for(f=0;f<vector1.length;f++)
+    {
+      var v;
+      v=prompt('Ingrese los datos del primer vector:','');
+      vector1[f]=parseInt(v);
+    }
+document.write('datos del vector 1'+' '+ vector1);
+document.write('<br>');
+  }
+
+
+function datos2(vector2)
+  {
+    var f;
+    for(f=0;f<vector2.length;f++)
+    {
+      var v;
+      v=prompt('Ingrese los datos del segundo vector','');
+      vector2[f]=parseInt(v);
+    }
+document.write('datos del vector 2'+' '+ vector2);
+document.write('<br>');
+  }
+
+
+function sumavectores(vector1,vector2,vector3)
+  {
+  var sum=0;
+for(f=0;f<vector3.length;f++)
+    {
+vector3[f]=vector1[f]+ vector2[f];
+
+}
+document.write('<br>');
+  }
+
+
+ function imprimirvec(vector3)
+  {
+    var f;
+    for(f=0;f<vector3.length;f++)
+    {
+      document.write(' '+vector3[f]);
+    }
+  }
+
+vector1=new Array(3);
+vector2=new Array(3);
+vector3=new Array(3);
+datos1(vector1);
+datos2(vector2);
+sumavectores(vector1,vector2,vector3);
+imprimirvec(vector3);
+
+
+</script>
+
+</body>
+</html>
+     

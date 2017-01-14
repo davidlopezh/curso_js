@@ -1,0 +1,36 @@
+<html>
+<head>
+</head>
+<body>
+
+<script type="text/javascript">
+
+function vaciar(control)
+{
+  clave.value='';
+  nombre.value='';
+
+}
+
+function datos(clave)
+{
+     if (clave.value.length<7 || clave.value.length>20){
+    alert('la clave tiene que ser mayor a 7 y menor que 20');
+}
+else {
+alert('todo correcto');
+}
+}
+
+</script>
+
+<form>
+<input type="text" id="nombre" onFocus="vaciar(this)" value="nombre"><br>
+<input type="text" id="clave" onFocus="vaciar(this)" onBlur="datos(this)" value="clave">
+<br>
+<input type="button" value="Confirmar">
+</form>
+
+</body>
+</html>
+     

@@ -1,0 +1,32 @@
+<html>
+<head>
+</head>
+<body>
+
+<script type="text/javascript">
+
+function cambiarPizza()
+{
+  var seleccion=document.getElementById('select');
+  document.getElementById('text1').value=seleccion.selectedIndex;
+  document.getElementById('text2').value=seleccion.options[seleccion.selectedIndex].text;
+  document.getElementById('text3').value=seleccion.options[seleccion.selectedIndex].value;
+}
+</script>
+
+
+<form>
+  <select id="select" onChange="cambiarPizza()">
+    <option value=100>Jamon y Queso</option>
+    <option value=101>Muzarella</option>
+    <option value=102>Morrones</option>
+  </select>
+<br>
+
+  La pizza seleccionada fue:<input type="text" id="text1"><br>
+  Pizza:<input type="text" id="text2"><br>
+  Valor:<input type="text" id="text3"><br>
+
+</body>
+</html>
+     
