@@ -1,0 +1,40 @@
+<html>
+<head>
+</head>
+<body>
+
+<script type="text/javascript">
+
+  var sueldos=[];
+  var valor;
+  do {
+    valor=prompt('Ingrese el sueldo (cero para finalizar)','');
+    valor=parseInt(valor);
+    if (valor!=0)
+      sueldos.push(valor);
+  } while (valor!=0);
+
+  sueldos.sort(function(x,y) {
+    if (x>y)
+      return 1;
+    else
+      return 0;
+  });
+
+  document.write('Sueldos ordenados de menor a mayor<br>');
+  var f;
+  for(f=0;f<sueldos.length;f++)
+  {
+    document.write(sueldos[f]+'<br>');
+  }
+  sueldos.reverse();
+  document.write('Sueldos ordenados de mayor a menor<br>');
+  for(f=0;f<sueldos.length;f++)
+  {
+    document.write(sueldos[f]+'<br>');
+  }
+
+</script>
+
+</body>
+</html>

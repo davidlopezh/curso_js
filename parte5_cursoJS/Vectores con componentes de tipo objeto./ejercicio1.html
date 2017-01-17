@@ -1,0 +1,47 @@
+
+<html>
+<head>
+
+</head>
+<body>
+
+<script type="text/javascript">
+  function Persona(nombre,edad)
+  {
+    this.nombre=nombre;
+    this.edad=edad;
+    this.imprimirNombre=imprimirNombre;
+  }
+
+  function imprimirNombre()
+  {
+    document.write(this.nombre+' que tiene una edad '+this.edad+'<br>' );
+  }
+
+  var vector=new Array(4);
+  vector[0]=new Persona('juan',44);
+  vector[1]=new Persona('ana',22);
+  vector[2]=new Persona('pedro',44);
+  vector[3]=new Persona('marcos',18);
+  var posmayor=0;
+  for(var f=1;f<vector.length;f++)
+  {
+    if (vector[f].edad>vector[posmayor].edad)
+    {
+      posmayor=f;
+    }
+  }
+  document.write('Personas con mayor edad:<br>');
+  for(var f=0;f<vector.length;f++)
+  {
+    if (vector[f].edad==vector[posmayor].edad)
+    {
+      vector[f].imprimirNombre();
+    }
+  }
+
+</script>
+
+</body>
+</html>
+     

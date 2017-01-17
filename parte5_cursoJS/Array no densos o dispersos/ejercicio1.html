@@ -1,0 +1,26 @@
+<html>
+<head>
+</head>
+<body>
+
+<script type="text/javascript">
+
+  var carton=[];
+  var f;
+  var cant=0;
+  do {
+    var premio=parseInt(Math.random()*1000);
+    carton[premio]=1000*(cant+1);
+    cant++;
+  } while (cant!=11);
+  for(f=0;f<carton.length;f++)
+  {
+    if (carton[f]!==undefined)
+    {
+      document.write('Carton '+f+' tiene un premio de '+carton[f]+'<br>');
+    }
+  }
+</script>
+
+</body>
+</html>
